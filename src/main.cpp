@@ -7,6 +7,7 @@ OutputManager led1 = OutputManager("LED", 3);
 void handleLine(const char* line, const char* value) {
   led1.outputDigital(line, value, 1);
 }
+
 SerialInterface s = SerialInterface(Serial, handleLine);
 
 void setup() {

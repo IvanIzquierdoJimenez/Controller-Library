@@ -1,8 +1,8 @@
 #include <Arduino.h>
 #include <Controller.h>
 
-PushButton pul1 = PushButton(2, "Prueba", "1", "0");
-OutputManager led1 = OutputManager("LED", 3);
+PushButton pul1 = PushButton(2, "asfa::pulsador::rec", "1", "0");
+OutputManager led1 = OutputManager("asfa::ilum::rec", 3);
 
 void handleLine(const char* line, const char* value) {
   led1.outputDigital(line, value, 1);

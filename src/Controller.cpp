@@ -94,7 +94,7 @@ void PushButton::update() {
     _estadoAnterior = estado;
 }
 
-PushButton_PCF8574::PushButton_PCF8574(int pin, const char* parametro, const char* valorPresionado, const char* valorSuelto, byte addr) : PCF8574(addr, Wire) {
+/*PushButton_PCF8574::PushButton_PCF8574(int pin, const char* parametro, const char* valorPresionado, const char* valorSuelto, byte addr) : PCF8574(addr, Wire) {
     _pin = pin;
     _parametro = parametro;
     _valorPresionado = valorPresionado;
@@ -129,7 +129,7 @@ void PushButton_PCF8574::update() {
   }
   _estadoAnterior = estado;
 }
-
+*/
 PotFilter::PotFilter(int pin, int minPot, int maxPot, int neutro, float minValue, float maxValue, int filterSize) {
   _pin = pin;
   _minValue = minValue;
